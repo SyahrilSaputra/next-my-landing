@@ -3,6 +3,7 @@ import {Menu, Mountain} from "lucide-react";
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {Button} from "@/components/ui/button";
 import * as React from "react";
+import {ModeToggle} from "@/components/landing_layout_items/theme-switcher";
 
 export const Header = () => {
     return (
@@ -11,42 +12,50 @@ export const Header = () => {
                 <Mountain className="h-6 w-6"/>
                 <span className="sr-only">Acme Inc</span>
             </Link>
-            <nav className="ml-auto flex gap-4 sm:gap-6">
-                <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+            <nav className="ml-auto flex gap-4 sm:gap-6 hidden lg:block">
+                <ModeToggle/>
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/home">
                     Beranda
                 </Link>
-                <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/about">
                     About Me
                 </Link>
-                <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/gallery">
                     Gallery
                 </Link>
-                <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/projects">
                     Projects
                 </Link>
-                <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="#">
                     Contact
                 </Link>
             </nav>
+            <div className={'ml-auto flex gap-4 sm:gap-6 block lg:hidden'}>
+
+            </div>
             <Sheet>
                 <SheetTrigger asChild>
-                    <Button className="lg:hidden" size="icon" variant="outline">
+                    <Button className="lg:hidden right" size="icon" variant="outline">
                         <Menu className="h-6 w-6"/>
                         <span className="sr-only">Toggle menu</span>
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="right">
                     <nav className="flex flex-col gap-4">
-                        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-                            Features
+                        <ModeToggle/>
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/home">
+                            Beranda
                         </Link>
-                        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-                            Pricing
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/about">
+                            About Me
                         </Link>
-                        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-                            About
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/gallery">
+                            Gallery
                         </Link>
-                        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/projects">
+                            Projects
+                        </Link>
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="#">
                             Contact
                         </Link>
                     </nav>

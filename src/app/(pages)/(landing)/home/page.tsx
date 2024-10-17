@@ -1,5 +1,4 @@
 import * as React from "react"
-
 import {Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@/components/ui/card"
 
 
@@ -15,8 +14,7 @@ export default function Home() {
                                     Hi
                                 </h1>
                                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                                    Discover the power of our innovative solutions. Streamline your workflow and boost
-                                    productivity.
+                                    is a software developer with over 2 years of experience, proficient in PHP and JavaScript, with expertise in frameworks such as Laravel, React JS, React Native, Bootstrap, and Tailwind CSS. He has successfully built and deployed more than five applications, focused on enhancing efficiency and streamlining data management. Passionate about continuous learning and sharing insights in the field of informatics
                                 </p>
                             </div>
                         </div>
@@ -24,8 +22,7 @@ export default function Home() {
                 </section>
                 <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
                     <div className="px-4 md:px-6">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Our
-                            Features</h2>
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">My Projects</h2>
                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             <Card>
                                 <CardHeader>
