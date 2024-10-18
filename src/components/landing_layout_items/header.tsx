@@ -14,7 +14,7 @@ export const Header = () => {
             </Link>
             <nav className="ml-auto flex gap-4 sm:gap-6 hidden lg:block">
                 <ModeToggle/>
-                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/home">
+                <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/">
                     Beranda
                 </Link>
                 <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/about">
@@ -43,7 +43,7 @@ export const Header = () => {
                 <SheetContent side="right">
                     <nav className="flex flex-col gap-4">
                         <ModeToggle/>
-                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/home">
+                        <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/">
                             Beranda
                         </Link>
                         <Link className="text-sm font-medium hover:underline underline-offset-4 mx-4" href="/about">
